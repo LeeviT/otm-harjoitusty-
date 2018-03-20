@@ -1,0 +1,94 @@
+commit 1a0cead829ced873dbf3e08dfcbbec84bee90d2f
+Author: LeeviT <leevi.tuikka@helsinki.fi>
+Date:   Tue Mar 20 22:25:08 2018 +0200
+
+    treeniä
+
+ eka.txt    |  3 +--
+ kolmas.txt | 17 ++++++++++++++++-
+ 2 files changed, 17 insertions(+), 3 deletions(-)
+
+commit 9fcca630ac0ddaa5ceb82f59b544ce5e4046de79
+Author: LeeviT <leevi.tuikka@helsinki.fi>
+Date:   Tue Mar 20 22:23:14 2018 +0200
+
+    uudelleennimeämistä
+
+ eka.txt      | 13 +++++++++++++
+ tiedosto.txt | 13 -------------
+ 2 files changed, 13 insertions(+), 13 deletions(-)
+
+commit b40e552ad65f91a3253f4e1477ac83618e8e429f
+Author: LeeviT <leevi.tuikka@helsinki.fi>
+Date:   Tue Mar 20 22:21:43 2018 +0200
+
+    poistoja
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit eb47e1cac81bfe4611043041c1ea78fdb2f1978d
+Author: LeeviT <leevi.tuikka@helsinki.fi>
+Date:   Tue Mar 20 22:18:44 2018 +0200
+
+    vielä lisää muutoksia
+
+ tiedosto.txt | 5 -----
+ 1 file changed, 5 deletions(-)
+
+commit d16f21af6be77123985f966e406a220c8daa97b1
+Author: LeeviT <leevi.tuikka@helsinki.fi>
+Date:   Tue Mar 20 22:17:53 2018 +0200
+
+    lisää muutoksia
+
+ tiedosto.txt | 19 ++++++++++++++++++-
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+
+commit b4032a844d80b224cd0051ebb0145ede312d9260
+Author: LeeviT <leevi.tuikka@helsinki.fi>
+Date:   Tue Mar 20 22:03:33 2018 +0200
+
+    muutoksia
+
+ stuff/nelonen.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 69cfd0f4f68054b59533b17b2344d011b3210c8f
+Author: LeeviT <leevi.tuikka@helsinki.fi>
+Date:   Tue Mar 20 22:02:53 2018 +0200
+
+    muutoksia
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit b15c0bc13b79c1a0361b0f5b9316b197f99bb3cb
+Author: LeeviT <leevi.tuikka@helsinki.fi>
+Date:   Tue Mar 20 22:01:29 2018 +0200
+
+    kolmas filu
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 10351bba26a37802edf3589a8fccc25d2dc4b945
+Author: LeeviT <leevi.tuikka@helsinki.fi>
+Date:   Tue Mar 20 21:59:56 2018 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit c1f9112a73508c2f031c6febd1ff285689c6dd43
+Author: LeeviT <leevi.tuikka@helsinki.fi>
+Date:   Tue Mar 20 21:15:36 2018 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
