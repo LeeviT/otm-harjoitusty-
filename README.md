@@ -1,3 +1,6 @@
-# Tässä on <h1> otsikko
+# OTM <h1>
+## Laskarit <h2>
+### Viikko 1 <h3> 
 
-**Juuh elikkäs** *juuh* eka __README__-tiedosto tulille _:D_
+[komentorivi.txt](https://github.com/LeeviT/otm-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+[gitlog.txt](https://github.com/LeeviT/otm-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
