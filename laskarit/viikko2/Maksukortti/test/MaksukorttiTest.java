@@ -49,7 +49,7 @@ public class MaksukorttiTest {
         kortti.lataaRahaa(25);
         assertEquals("Kortilla on rahaa 35.0 euroa", kortti.toString());
     }
-
+    
     @Test
     public void kortinSaldoEiYlitaMaksimiarvoa() {
         kortti.lataaRahaa(200);
@@ -76,7 +76,7 @@ public class MaksukorttiTest {
     }
     @Test 
     public void voiOstaaMaukkaanLounaanKunTasasumma() {
-        Maksukortti maukasKortti = new Maksukortti(4.00);
+        Maksukortti maukasKortti = new Maksukortti(4.0);
         maukasKortti.syoMaukkaasti();
         assertEquals("Kortilla on rahaa 0.0 euroa", maukasKortti.toString());
     }
