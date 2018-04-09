@@ -26,4 +26,4 @@ class InputFileReader:
         return bodyList
 
     readNumberOfBodies("testi.dat")
-    print(readDataToBodyList("testi.dat"))
+    readDataToBodyList("testi.dat")

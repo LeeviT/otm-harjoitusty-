@@ -5,4 +5,7 @@
 /laskarit/viikko2/Unicafe/nbproject/
 /__pycache__/
 /target/
-*/.idea/
+/src/.idea/
+/src/__pycache__/
+/src/target/
+.pytest_cache/
