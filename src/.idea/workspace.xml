@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0600cb3f-571a-4385-a891-ad1d994e7c3e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../build.py" beforeDir="false" afterPath="$PROJECT_DIR$/../build.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/src.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/python/io/inputFileReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/python/io/inputFileReader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/python/structures/quadtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/python/structures/quadtree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +14,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/src$fileReader.coverage" NAME="fileReader Coverage Results" MODIFIED="1522798670289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/python/io" />
-    <SUITE FILE_PATH="coverage/src$quadtree.coverage" NAME="quadtree Coverage Results" MODIFIED="1522862878080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/python/structures" />
+    <SUITE FILE_PATH="coverage/src$fileReader.coverage" NAME="fileReader Coverage Results" MODIFIED="1523320530595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/python/io" />
+    <SUITE FILE_PATH="coverage/src$quadtree.coverage" NAME="quadtree Coverage Results" MODIFIED="1523325673068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/python/structures" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -25,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/../build.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="37" selection-start-column="37" selection-end-column="37" />
+              <caret column="43" selection-start-column="43" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -42,12 +40,10 @@
       <file leaf-file-name="quadtree.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/python/structures/quadtree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+            <state relative-caret-position="285">
+              <caret line="70" column="58" lean-forward="true" selection-start-line="70" selection-start-column="58" selection-end-line="70" selection-end-column="58" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1523237845642" expanded="true" signature="98:100" ph="..." />
-                <marker date="1523237845642" expanded="true" signature="700:715" ph="..." />
               </folding>
             </state>
           </provider>
@@ -97,7 +93,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1" />
     <option name="width" value="1602" />
     <option name="height" value="869" />
@@ -160,7 +156,7 @@
     <property name="SearchEverywhereHistoryKey" value="class&#9;null&#9;null&#10;create class&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -175,7 +171,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.quadtree">
-    <configuration name="fileReader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="fileReader" type="PythonConfigurationType" factoryName="Python">
       <module name="src" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -220,7 +216,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.quadtree" />
-        <item itemvalue="Python.fileReader" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +233,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1602" height="869" extended-state="7" />
+    <frame x="-1" y="0" width="1602" height="869" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -247,7 +242,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32939634" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26902887" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26509187" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32939634" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.105" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -302,8 +297,6 @@
           <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1523237845642" expanded="true" signature="98:100" ph="..." />
-            <marker date="1523237845642" expanded="true" signature="700:715" ph="..." />
           </folding>
         </state>
       </provider>
@@ -335,8 +328,6 @@
           <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1523237845642" expanded="true" signature="98:100" ph="..." />
-            <marker date="1523237845642" expanded="true" signature="700:715" ph="..." />
           </folding>
         </state>
       </provider>
@@ -368,8 +359,6 @@
           <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1523237845642" expanded="true" signature="98:100" ph="..." />
-            <marker date="1523237845642" expanded="true" signature="700:715" ph="..." />
           </folding>
         </state>
       </provider>
@@ -438,17 +427,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../build.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37" selection-start-column="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/python/io/inputFileReader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -461,12 +450,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/python/structures/quadtree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        <state relative-caret-position="285">
+          <caret line="70" column="58" lean-forward="true" selection-start-line="70" selection-start-column="58" selection-end-line="70" selection-end-column="58" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1523237845642" expanded="true" signature="98:100" ph="..." />
-            <marker date="1523237845642" expanded="true" signature="700:715" ph="..." />
           </folding>
         </state>
       </provider>
