@@ -1,6 +1,6 @@
 import math
 from enum import Enum
-from body import Body
+from src.main.python.structures.body import Body
 
 
 class NodeStorage():
