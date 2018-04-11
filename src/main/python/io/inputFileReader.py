@@ -1,4 +1,4 @@
-from main.python.structures.body import Body
+from src.main.python.structures.body import Body
 
 class InputFileReader:
 

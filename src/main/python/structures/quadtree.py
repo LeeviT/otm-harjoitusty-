@@ -1,6 +1,6 @@
 import math
 from enum import Enum
-from main.python.structures.body import Body
+from body import Body
 
 
 class NodeStorage():
@@ -85,7 +85,6 @@ class Node:
         SENode.id = SEID
         commID = nodeStorage.getStorageElementUsingID(self.id)[2]
         commBody = bodyList[commID - 1]
-        print(commBody.getVisualize())
         if SWNode.isBodyInNode(commBody) == True:
             SWNode.isEmpty = False
             nodeStorage.addNodeToStorage(SWID, SWNode, commBody.id)
@@ -148,21 +147,21 @@ class Node:
         return int(math.log(1 / (self.x1 - self.x0), 2))
 
 
-global bodyList
-bodyList = []
-nodeStorage = NodeStorage()
-rootNode = Node(0.0, 1.0, 0.0, 1.0, 'ROOT')
-nodeStorage.addNodeToStorage(0, rootNode, None)
-testBody = Body(1, 1.2, 0.6, 0.1, 0.01, 0.01)
-testBody2 = Body(2, 1.2, 0.1, 0.1, 0.01, 0.01)
-testBody3 = Body(3, 1.2, 0.1, 0.15, 0.01, 0.01)
-bodyList.extend((testBody, testBody2, testBody3))
-#rootNode.divideNode(nodeStorage)
-rootNode.addBodyToQuadtree(testBody, nodeStorage)
-rootNode.isEmpty = False
-rootNode.addBodyToQuadtree(testBody2, nodeStorage)
-rootNode.addBodyToQuadtree(testBody3, nodeStorage)
+class main():
+    global bodyList
+    bodyList = []
+    nodeStorage = NodeStorage()
+    rootNode = Node(0.0, 1.0, 0.0, 1.0, 'ROOT')
+    nodeStorage.addNodeToStorage(0, rootNode, None)
+    testBody = Body(1, 1.2, 0.6, 0.1, 0.01, 0.01)
+    testBody2 = Body(2, 1.2, 0.1, 0.1, 0.01, 0.01)
+    testBody3 = Body(3, 1.2, 0.1, 0.15, 0.01, 0.01)
+    bodyList.extend((testBody, testBody2, testBody3))
+    #rootNode.divideNode(nodeStorage)
+    rootNode.addBodyToQuadtree(testBody, nodeStorage)
+    rootNode.isEmpty = False
+    rootNode.addBodyToQuadtree(testBody2, nodeStorage)
+    rootNode.addBodyToQuadtree(testBody3, nodeStorage)
 
-nodeStorage.printNodeStorage()
-#print(nodeStorage.getNodeUsingID(3).getInfo())
-
+    nodeStorage.printNodeStorage()
+    #print(nodeStorage.getNodeUsingID(3).getInfo())
