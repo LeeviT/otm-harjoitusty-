@@ -1,5 +1,5 @@
 from pybuilder.core import use_plugin, init
-from structures.quadtree import main
+#from structures.quadtree import main
 
 use_plugin("python.core")
 use_plugin("python.unittest")
