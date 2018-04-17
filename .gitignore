@@ -11,3 +11,6 @@
 /src/target/
 .pytest_cache/
 .coverage
+src/main/python/structures/__pycache__/__init__.cpython-35.pyc
+src/main/python/structures/__pycache__/body.cpython-35.pyc
+
