@@ -1,4 +1,4 @@
-from src.main.python.structures.body import Body
+from main.python.structures.body import Body
 
 class InputFileReader:
 
@@ -25,5 +25,5 @@ class InputFileReader:
                 i += 1
         return bodyList
 
-    readNumberOfBodies("testi.dat")
-    readDataToBodyList("testi.dat")
+    readNumberOfBodies("src/main/python/io/testi.dat")
+    readDataToBodyList("src/main/python/io/testi.dat")

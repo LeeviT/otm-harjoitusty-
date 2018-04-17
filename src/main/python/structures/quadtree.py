@@ -1,6 +1,6 @@
 import math
 from enum import Enum
-from src.main.python.structures.body import Body
+from main.python.structures.body import Body
 
 
 class NodeStorage():
@@ -74,37 +74,37 @@ class Node:
         SWNode = Node(self.x0, self.x1 / 2.0, self.y0, self.y1 / 2.0, NodeDirection.SW.name)
         NWNode = Node(self.x0, self.x1 / 2.0, self.y1 / 2.0, self.y1, NodeDirection.NW.name)
         NENode = Node(self.x1 / 2.0, self.x1, self.y1 / 2.0, self.y1, NodeDirection.NE.name)
-        SENode = Node(self.x1 / 2.0, self.x1, self.y1, self.y1 / 2.0, NodeDirection.SE.name)
-        SWID = SWNode.generateNodeID(self.id)
-        NWID = NWNode.generateNodeID(self.id)
-        NEID = NENode.generateNodeID(self.id)
-        SEID = SENode.generateNodeID(self.id)
-        SWNode.id = SWID
-        NWNode.id = NWID
-        NENode.id = NEID
-        SENode.id = SEID
+        SENode = Node(self.x1 / 2.0, self.x1, self.y0, self.y1 / 2.0, NodeDirection.SE.name)
+        SWNode.id = SWNode.generateNodeID(self.id)
+        NWNode.id = NWNode.generateNodeID(self.id)
+        NENode.id = NENode.generateNodeID(self.id)
+        SENode.id = SENode.generateNodeID(self.id)
+        self.addToChildNode(nodeStorage, SWNode, NWNode, NENode, SENode)
+
+
+    def addToChildNode(self, nodeStorage, SWNode, NWNode, NENode, SENode):
         commID = nodeStorage.getStorageElementUsingID(self.id)[2]
         commBody = bodyList[commID - 1]
         if SWNode.isBodyInNode(commBody) == True:
             SWNode.isEmpty = False
-            nodeStorage.addNodeToStorage(SWID, SWNode, commBody.id)
+            nodeStorage.addNodeToStorage(SWNode.id, SWNode, commBody.id)
         else:
-            nodeStorage.addNodeToStorage(SWID, SWNode, None)
+            nodeStorage.addNodeToStorage(SWNode.id, SWNode, None)
         if NWNode.isBodyInNode(commBody) == True:
             NWNode.isEmpty = False
-            nodeStorage.addNodeToStorage(NWID, NWNode, commBody.id)
+            nodeStorage.addNodeToStorage(NWNode.id, NWNode, commBody.id)
         else:
-            nodeStorage.addNodeToStorage(NWID, NWNode, None)
+            nodeStorage.addNodeToStorage(NWNode.id, NWNode, None)
         if NENode.isBodyInNode(commBody) == True:
             NENode.isEmpty = False
-            nodeStorage.addNodeToStorage(NEID, NENode, commBody.id)
+            nodeStorage.addNodeToStorage(NENode.id, NENode, commBody.id)
         else:
-            nodeStorage.addNodeToStorage(NEID, NENode, None)
+            nodeStorage.addNodeToStorage(NENode.id, NENode, None)
         if SENode.isBodyInNode(commBody) == True:
             SENode.isEmpty = False
-            nodeStorage.addNodeToStorage(SEID, SENode, commBody.id)
+            nodeStorage.addNodeToStorage(SENode.id, SENode, commBody.id)
         else:
-            nodeStorage.addNodeToStorage(SEID, SENode, None)
+            nodeStorage.addNodeToStorage(SENode.id, SENode, None)
 
 
     def addBodyToQuadtree(self, body, nodeStorage):
@@ -157,11 +157,8 @@ class main():
     testBody2 = Body(2, 1.2, 0.1, 0.1, 0.01, 0.01)
     testBody3 = Body(3, 1.2, 0.1, 0.15, 0.01, 0.01)
     bodyList.extend((testBody, testBody2, testBody3))
-    #rootNode.divideNode(nodeStorage)
     rootNode.addBodyToQuadtree(testBody, nodeStorage)
-    rootNode.isEmpty = False
     rootNode.addBodyToQuadtree(testBody2, nodeStorage)
     rootNode.addBodyToQuadtree(testBody3, nodeStorage)
 
     nodeStorage.printNodeStorage()
-    #print(nodeStorage.getNodeUsingID(3).getInfo())
