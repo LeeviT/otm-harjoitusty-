@@ -12,7 +12,7 @@ Sovellus simuloi usean kappaleen välistä gravitaatiovuorovaikutusta.
 
 ## Komentorivitoiminnot
 ### Virtuaaliympäristö
-Sovellusta ajetaan (mieluiten) virtuaaliympäristössä _virtualenv_illä. Sen voit käynnistää projektin juuressa _otm-harjoitustyo/_ komennolla
+Sovellusta ajetaan (mieluiten) virtuaaliympäristössä _virtualenv_ illä. Sen voit käynnistää projektin juuressa _otm-harjoitustyo/_ komennolla
 ```
 source venv/bin/activate
 ```
@@ -29,7 +29,7 @@ chromium target/reports/coverage_html/index.html
 Ja mikäli checkstyle-virheitä on, on checkstyle-raportin polku _target/reports/flake8_.
 
 ### Ohjelman suorittaminen
-Toistaiseksi _.egg_iä ei ole vielä generoitavissa, joten ohjelma suoritetaan yksinkertaisesti komennolla
+Toistaiseksi _.egg_ iä ei ole vielä generoitavissa, joten ohjelma suoritetaan yksinkertaisesti komennolla
 ```
 python3.6 src/main/python/mainDao/__main__.py 
 ```
