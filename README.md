@@ -33,6 +33,6 @@ Ja mikäli checkstyle-virheitä on, on checkstyle-raportin polku _target/reports
 ### Ohjelman suorittaminen
 Toistaiseksi _.egg_ iä ei ole vielä generoitavissa, joten ohjelma suoritetaan yksinkertaisesti komennolla
 ```
-python3.6 src/main/python/mainDao/__main__.py 
+python3.6 src/main/python/mainDao/tmpMain.py 
 ```
 
