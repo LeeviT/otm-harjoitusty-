@@ -1,29 +1,28 @@
 from main.python.structures.body import Body
 
+
 class InputFileReader:
 
-    def readNumberOfBodies(fileName):
+    def read_number_of_bodies(file_name):
         global nob
-        file = open(fileName, "r")
-        firstLine = file.readline()
-        nob = int(firstLine[4:100])
+        file = open(file_name, "r")
+        first_line = file.readline()
+        nob = int(first_line[4:100])
         return nob
 
-    def readDataToBodyList(fileName):
-        inputData = [None]*nob
-        bodyList = [None]*nob
+    def read_data_to_body_list(file_name):
+        input_data = [None]*nob
+        body_list = [None]*nob
         i = 0
-        with open(fileName, "r") as file:
+        with open(file_name, "r") as file:
             lines = file.readlines()[1:]
             for line in lines:
-                inputData[i] = list(map(float, line.split()))
-                id, mass, x = i, inputData[i][0], inputData[i][1]
-                y, vx, vy = inputData[i][2], inputData[i][3], inputData[i][4]
-                bodyList[i] = Body(id, mass, x, y, vx, vy)
-                testBody = Body(id, mass, x, y, vx, vy)
-                #print(testBody.getVisualize())
+                input_data[i] = list(map(float, line.split()))
+                body_id, mass, x = i, input_data[i][0], input_data[i][1]
+                y, vx, vy = input_data[i][2], input_data[i][3], input_data[i][4]
+                body_list[i] = Body(body_id, mass, x, y, vx, vy)
                 i += 1
-        return bodyList
+        return body_list
 
-    readNumberOfBodies("src/main/python/io/testi.dat")
-    readDataToBodyList("src/main/python/io/testi.dat")
+    read_number_of_bodies("src/main/python/io/testi.dat")
+    read_data_to_body_list("src/main/python/io/testi.dat")
