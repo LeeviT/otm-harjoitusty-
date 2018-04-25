@@ -10,6 +10,11 @@ Sovellus simuloi usean kappaleen välistä gravitaatiovuorovaikutusta.
 
 [työaikakirjanpito](https://github.com/LeeviT/otm-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
 
+[arkkitehtuuridokkari](https://github.com/LeeviT/otm-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
+## Releaset
+[viikon 5 release](https://github.com/LeeviT/otm-harjoitustyo/releases/tag/v0.1-alpha)
+
 ## Komentorivitoiminnot
 ### Virtuaaliympäristö
 Sovellusta ajetaan (mieluiten) virtuaaliympäristössä _virtualenv_ illä. Sen voit käynnistää projektin juuressa _otm-harjoitustyo/_ komennolla
@@ -28,9 +33,13 @@ chromium target/reports/coverage_html/index.html
 ```
 Ja mikäli checkstyle-virheitä on, on checkstyle-raportin polku _target/reports/flake8_.
 
-### Ohjelman suorittaminen
-Toistaiseksi _.egg_ iä ei ole vielä generoitavissa, joten ohjelma suoritetaan yksinkertaisesti komennolla
+### Suoritettavan whl:n generointi ja ohjelman suorittaminen
+Projektin juuressa eli _otm-harjoitustyo/_ suorita komento 
 ```
-python3.6 src/main/python/mainDao/__main__.py 
+pyb publish
+```
+jolloin _.whl_-tiedosto generoituu _target_-kansion alakansioon. Voit suorittaa _wheelin_ kommennolla
+```
+python3.6 target/dist/nbodysim-1.0.dev0/dist/nbodysim-1.0.dev0-py3-none-any.whl 
 ```
 
