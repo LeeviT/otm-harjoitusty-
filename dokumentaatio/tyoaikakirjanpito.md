@@ -12,3 +12,10 @@
 | 8.4.  | 4    | koodaamista |
 | 9.4.  | 1    | koodaamista |
 | 10.4. | 7    | koodaamista, PyBuilderin yms. ympäristön kanssa tappelemista |
+| 15.4. | 6	   | koodaamista, PyBuilderin konffaus loppuun, testien aloitus |
+| 17.4. | 6    | koodaamista |
+| 22.4. | 1	   | koodaamista |
+| 23.4. | 5	   | koodaamista, wheelin generointi |
+| 24.4. | 8    | koodaamista, lisää testejä, sekvenssikaavio |
+
+__yht.__ 58 tuntia
