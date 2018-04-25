@@ -22,8 +22,14 @@ Sovellusta ajetaan (mieluiten) virtuaaliympäristössä _virtualenv_ illä. Sen 
 source venv/bin/activate
 ```
 
+### Vaatimukset
+Projektin buildaamiseen vaaditaan _pip_in versiota 10.0.0 alempi versio sekä _PyBuilder_. _PyBuilder_in saat asennettua aktivoimalla ensin virtuaaliympäristö (ks. yllä) ja suorittamalla komennon
+```
+pip install pybuilder
+``` 
+
 ### Testaus
-Koodia testataan PyBuilderin avulla (tulee _venv_-kansion mukana). Checkstylen tekeminen _flake8_:lla, sekä yksikkö testien että testauskattavuuden generoiminen tapahtuu komennolla
+Koodia testataan PyBuilderin avulla. Checkstylen tekeminen _flake8_:lla, sekä yksikkö testien että testauskattavuuden generoiminen tapahtuu komennolla
 ```
 pyb analyze
 ```
