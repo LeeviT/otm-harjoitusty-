@@ -12,6 +12,8 @@ Sovellus simuloi usean kappaleen välistä gravitaatiovuorovaikutusta.
 
 [arkkitehtuuridokkari](https://github.com/LeeviT/otm-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
+[sekvenssikaavio](https://github.com/LeeviT/otm-harjoitustyo/blob/master/dokumentaatio/sekvenssikaavio.md)
+
 ## Releaset
 [viikon 5 release](https://github.com/LeeviT/otm-harjoitustyo/releases/tag/v0.1-alpha)
 
@@ -23,7 +25,7 @@ source venv/bin/activate
 ```
 
 ### Vaatimukset
-Projektin buildaamiseen vaaditaan _pip_in versiota 10.0.0 alempi versio sekä _PyBuilder_. _PyBuilder_in saat asennettua aktivoimalla ensin virtuaaliympäristö (ks. yllä) ja suorittamalla komennon
+Projektin buildaamiseen vaaditaan _pipin_ versiota 10.0.0 alempi versio sekä _PyBuilder_. _PyBuilderin_ saat asennettua aktivoimalla ensin virtuaaliympäristö (ks. yllä) ja suorittamalla komennon
 ```
 pip install pybuilder
 ``` 
