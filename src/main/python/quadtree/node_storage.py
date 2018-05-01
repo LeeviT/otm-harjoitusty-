@@ -30,6 +30,9 @@ class NodeStorage:
     def get_size(self):
         return self.storage_size
 
+    def get_node_using_index(self, i):
+        return self.node_list[i][1]
+
     def get_non_empty_child_nodes(self, nbod):
         child_nodes = []
         for i in range(nbod):

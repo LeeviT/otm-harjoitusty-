@@ -12,8 +12,19 @@ class Node:
         self.y0 = y0
         self.y1 = yh
         self.direction = direction
+        self.com_x = (self.x0 + self.x1) / 2.0
+        self.com_y = (self.y0 + self.y1) / 2.0
+        self.total_mass = 0.0
         self.isEmpty = True
         self.hasChildren = False
+
+    def set_com(self, x, y, mass):
+        self.com_x = x
+        self.com_y = y
+        self.total_mass = mass
+
+    def get_com(self):
+        return self.com_x, self.com_y, self.total_mass
 
     def is_body_in_node(self, body):
         if (body.get_x() > self.x0) & (body.get_x() < self.x1) & (body.get_y() > self.y0) & (body.get_y() < self.y1):
@@ -100,6 +111,9 @@ class Node:
 
     def get_info(self):
         return self.id, self.x0, self.x1, self.y0, self.y1
+
+    def is_empty(self):
+        return self.isEmpty
 
     def get_level(self):
         return int(math.log(1 / (self.x1 - self.x0), 2))
