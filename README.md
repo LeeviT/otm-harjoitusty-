@@ -16,6 +16,7 @@ Sovellus simuloi usean kappaleen välistä gravitaatiovuorovaikutusta.
 
 ## Releaset
 [viikon 5 release](https://github.com/LeeviT/otm-harjoitustyo/releases/tag/v0.1-alpha)
+[viikon 6 release](https://github.com/LeeviT/otm-harjoitustyo/releases/tag/v0.2-alpha)
 
 ## Komentorivitoiminnot
 ### Virtuaaliympäristö
@@ -29,6 +30,10 @@ Projektin buildaamiseen vaaditaan _pipin_ versiota 10.0.0 alempi versio sekä _P
 ```
 pip install pybuilder
 ``` 
+sekä _numpy_:
+```
+pip install numpy
+```
 
 ### Testaus
 Koodia testataan PyBuilderin avulla. Checkstylen tekeminen _flake8_:lla, sekä yksikkö testien että testauskattavuuden generoiminen tapahtuu komennolla
