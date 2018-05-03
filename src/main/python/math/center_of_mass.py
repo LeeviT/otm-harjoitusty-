@@ -1,5 +1,5 @@
 def calculate_coms(node_storage, body_list):
-    for i in range(len(body_list)):
+    for i in range(node_storage.get_size()):
         body_ids = node_storage.get_ids_dict()[node_storage.get_node_using_index(i).get_id()]
         if not node_storage.get_node_using_index(i).is_empty():
             total_mass = 0.0
@@ -12,5 +12,4 @@ def calculate_coms(node_storage, body_list):
                 total_mass += body_list[k].get_mass()
             com_x = total_x / total_mass
             com_y = total_y / total_mass
-            node_storage.get_node_using_index(i)
-
+            node_storage.get_node_using_index(i).set_com(com_x, com_y, total_mass)

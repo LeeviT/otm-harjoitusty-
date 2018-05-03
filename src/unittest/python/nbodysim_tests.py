@@ -4,8 +4,8 @@ from main.python.quadtree.body import Body
 from enum import Enum
 from main.python.quadtree.node_storage import NodeStorage
 from main.python.quadtree.node_direction import NodeDirection
-from main.python.math.center_of_mass import calculate_com
-from main.python.io.inputFileReader import read_data_to_body_list, read_number_of_bodies
+from main.python.math.center_of_mass import calculate_coms
+from main.python.io.input_file_reader import read_data_to_body_list, read_number_of_bodies
 
 
 class TestInputFileReader(TestCase):
@@ -13,6 +13,10 @@ class TestInputFileReader(TestCase):
     def test_read_number_of_bodies(self):
         nob = read_number_of_bodies("src/main/resources/randominput.dat")
         self.assertEqual(nob, 100)
+
+    def test_read_data_to_list(self):
+        body_list = read_data_to_body_list("src/main/resources/randominput.dat")
+        self.assertEqual(body_list[2].get_visualize(), (4.12072176992528, 0.6389363493301076, 0.30757506378608235))
 
 
 class TestNodeDirection(TestCase, Enum):
@@ -29,12 +33,13 @@ class TestCenterOfMass(TestCase):
         body2 = Body(2, 1.0, 0.75, 0.5, 0.1, 0.1)
         body_list.append(body1)
         body_list.append(body2)
-        node = Node(0.0, 1.0, 0.0, 1.0, 'ROOT')
         node_storage = NodeStorage()
-        node_storage.add_node_to_storage(node, body1.get_id())
-        node_storage.add_node_to_storage(node, body2.get_id())
-        com = calculate_com(node_storage, body_list, 0)
-        self.assertEqual(com, (0.5, 0.5))
+        root_node = Node(0.0, 1.0, 0.0, 1.0, 'ROOT')
+        node_storage.add_node_to_storage(root_node, None)
+        root_node.add_body_to_quadtree(body_list[0], node_storage, body_list)
+        root_node.add_body_to_quadtree(body_list[1], node_storage, body_list)
+        calculate_coms(node_storage, body_list)
+        self.assertEqual(node_storage.get_node_using_id(0).get_com(), (0.5, 0.5, 2.0))
 
 
 class TestNode(TestCase):

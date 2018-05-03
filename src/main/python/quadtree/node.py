@@ -15,6 +15,7 @@ class Node:
         self.com_x = (self.x0 + self.x1) / 2.0
         self.com_y = (self.y0 + self.y1) / 2.0
         self.total_mass = 0.0
+        self.size = abs(self.x1 - self.x0)
         self.isEmpty = True
         self.hasChildren = False
 
@@ -25,6 +26,9 @@ class Node:
 
     def get_com(self):
         return self.com_x, self.com_y, self.total_mass
+
+    def get_size(self):
+        return self.size
 
     def is_body_in_node(self, body):
         if (body.get_x() > self.x0) & (body.get_x() < self.x1) & (body.get_y() > self.y0) & (body.get_y() < self.y1):

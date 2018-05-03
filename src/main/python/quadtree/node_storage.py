@@ -24,6 +24,10 @@ class NodeStorage:
         for i in range(0, self.storage_size):
             print(self.node_list[i][0], self.node_list[i][1].get_info(), self.node_list[i][2])
 
+    def print_coms(self):
+        for i in range(0, self.storage_size):
+            print(self.node_list[i][0], self.node_list[i][1].get_com())
+
     def get_ids_dict(self):
         return self.ids_dict
 
