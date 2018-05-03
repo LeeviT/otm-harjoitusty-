@@ -16,6 +16,7 @@ Sovellus simuloi usean kappaleen välistä gravitaatiovuorovaikutusta.
 
 ## Releaset
 [viikon 5 release](https://github.com/LeeviT/otm-harjoitustyo/releases/tag/v0.1-alpha)
+
 [viikon 6 release](https://github.com/LeeviT/otm-harjoitustyo/releases/tag/v0.2-alpha)
 
 ## Komentorivitoiminnot

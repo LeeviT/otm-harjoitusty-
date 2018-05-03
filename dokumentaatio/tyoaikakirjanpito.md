@@ -17,5 +17,9 @@
 | 22.4. | 1	   | koodaamista |
 | 23.4. | 5	   | koodaamista, wheelin generointi |
 | 24.4. | 8    | koodaamista, lisää testejä, sekvenssikaavio |
+| 28.4. | 4    | massakeskipisteen laskeminen toteutettu |
+| 29.4. | 6    | koodailua |
+| 1.5.  | 4    | voimien lasku toteutettu |
+| 2.5.  | 7    | koodailua ja Sphinxin konffausta |
 
-__yht.__ 58 tuntia
+__yht.__ 79 tuntia
