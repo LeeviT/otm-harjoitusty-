@@ -10,6 +10,7 @@
 /src/.idea/workspace.xml
 /src/__pycache__/
 /src/target/
+/src/unittest/python/__pycache__/
 .pytest_cache/
 .coverage
 /__pycache__
