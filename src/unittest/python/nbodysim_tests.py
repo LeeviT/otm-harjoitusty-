@@ -6,17 +6,28 @@ from main.python.quadtree.node_storage import NodeStorage
 from main.python.quadtree.node_direction import NodeDirection
 from main.python.math.center_of_mass import calculate_coms
 from main.python.io.input_file_reader import read_data_to_body_list, read_number_of_bodies
+from main.python.math.forces import check_if_related_node_added
+
+
+class TestMath(TestCase):
+
+    def test_check_if_related_node_added(self):
+        calculated_nodes = []
+        calculated_nodes.extend([34, 21, 1233,  12, 44])
+        is_added = check_if_related_node_added(123, calculated_nodes)
+        self.assertTrue(is_added)
 
 
 class TestInputFileReader(TestCase):
 
+    # src/main/resources/randominput.dat
     def test_read_number_of_bodies(self):
         nob = read_number_of_bodies("src/main/resources/randominput.dat")
         self.assertEqual(nob, 100)
 
-    # def test_read_data_to_list(self):
-        # body_list = read_data_to_body_list("src/main/resources/randominput.dat")
-        # self.assertEqual(body_list[2].get_visualize(), (4.12072176992528, 0.6389363493301076, 0.30757506378608235))
+    def test_read_data_to_list(self):
+        nob, body_list = read_data_to_body_list("src/main/resources/randominput.dat")
+        self.assertEqual(body_list[0].get_x(), 0.49635357897449217)
 
 
 class TestNodeDirection(TestCase, Enum):
@@ -48,6 +59,16 @@ class TestNode(TestCase):
         node = Node(0.0, 0.25, 0.25, 0.5, 'NW')
         level = node.get_level()
         self.assertEqual(level, 2)
+
+    def test_generate_node_id_root(self):
+        node = Node(0.0, 1.0, 0.0, 1.0, 'ROOT')
+        root_id = node.generate_node_id(0)
+        self.assertEqual(0, root_id)
+
+    def test_node_get_info(self):
+        node = Node(0.5, 1.0, 0.0, 0.5, 'SE')
+        node_info = node.get_info()
+        self.assertEqual(node_info, (0, 0.5, 1.0, 0.0, 0.5))
 
 
 class TestBody(TestCase):

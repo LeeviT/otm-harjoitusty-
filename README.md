@@ -21,7 +21,7 @@ Sovellus simuloi usean kappaleen välistä gravitaatiovuorovaikutusta.
 
 ## Komentorivitoiminnot
 ### Virtuaaliympäristö
-Sovellusta ajetaan (mieluiten) virtuaaliympäristössä _virtualenv_:illä. Mikäli se ei ole asennettuna, voit asentaa sen komennolla
+Sovellusta buildataan ja ajetaan (mieluiten) virtuaaliympäristössä _virtualenv_:illä. Mikäli se ei ole asennettuna, voit asentaa sen komennolla
 ```
 pip install virtualenv
 ```
@@ -40,7 +40,7 @@ Projektin buildaamiseen vaaditaan _pip_:n versiota 10.0.0 alempi versio sekä mu
 pip install -r requirements.txt
 ```
 
-### Testaus
+### Testaus ja checkstylen tekeminen
 Koodia testataan PyBuilderin avulla. Checkstylen tekeminen _flake8_:lla, sekä yksikkö testien että testauskattavuuden generoiminen tapahtuu komennolla
 ```
 pyb analyze

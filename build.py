@@ -12,9 +12,9 @@ default_task = "publish"
 
 @init
 def set_properties(project):
-    project.set_property("dir_source_unittest_python", "src/unittest/python")
-    project.set_property("coverage_exceptions", ["__main__", "python/nbodysim_tests"])
     project.set_property("dir_source_main_python",'src/')
+    project.set_property("dir_source_unittest_python", "src/unittest/python")
+    project.set_property("coverage_exceptions", ["__main__", "python/nbodysim_tests", "CalculationView"])
     project.set_property("coverage_branch_threshold_warn", 70)
     project.set_property("coverage_branch_partial_threshold_warn", 70)
     project.set_property("coverage_break_build", False)

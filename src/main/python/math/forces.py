@@ -24,7 +24,7 @@ def calc_force_on_body(node_storage, tmp_node, tmp_body, theta, force_x, force_y
     x_dist = tmp_node.get_com()[0] - tmp_body.get_x()
     y_dist = tmp_node.get_com()[1] - tmp_body.get_y()
     ratio_list = check_neighboring_nodes(node_storage, tmp_node, tmp_body)
-    is_added = check_if_related_node_added(tmp_node, calculated_nodes)
+    is_added = check_if_related_node_added(tmp_node.get_id(), calculated_nodes)
     if theta >= ratio_list[0] or theta >= ratio_list[1] or theta >= ratio_list[2] or theta >= ratio_list[3]:
         tmp_id = int(str(tmp_node.get_id())[:-1])
         calc_force_on_body(node_storage, node_storage.get_node_using_id(tmp_id), tmp_body, theta, force_x, force_y,
@@ -60,10 +60,9 @@ def check_neighboring_nodes(node_storage, tmp_node, tmp_body):
     return ratio_list
 
 
-def check_if_related_node_added(tmp_node, calculated_nodes):
+def check_if_related_node_added(tmp_id, calculated_nodes):
     is_added = False
-    tmp_id = tmp_node.get_id()
-    length = len(str(tmp_node.get_id()))
+    length = len(str(tmp_id))
     for i in range(len(calculated_nodes)):
         if str(calculated_nodes[i]).find(str(tmp_id)) == 0:
             is_added = True

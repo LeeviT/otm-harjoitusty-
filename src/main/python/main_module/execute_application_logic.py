@@ -7,9 +7,9 @@ from main.python.quadtree.node_storage import NodeStorage
 from main.python.math.center_of_mass import calculate_coms
 from main.python.math.forces import calculate_forces
 from main.python.math.update_attributes import calc_updates
-from main.python.ui.set_parameters import StartGUI
-from main.python.ui.calculation_phase import CalculationView
-from main.python.ui.final_info import FinalView
+from main.python.ui_objects.set_parameters import StartGUI
+from main.python.ui_objects.calculation_phase import CalculationView
+from main.python.ui_objects.final_info import FinalView
 
 
 def main():
@@ -18,7 +18,7 @@ def main():
     timestep_counter.update_current_timestep(0)
     nob, body_list = read_data_to_body_list(input_file)
     simulation_accuracy = 0.01 + 0.03 * simulation_accuracy
-    output_file = str("src/main/resources/nbodysim" + str(nob) + "_OUT_" + strftime("%Y-%m-%d_%H:%M:%S", gmtime()))
+    output_file = str("nbodysim" + str(nob) + "_OUT_" + strftime("%Y-%m-%d_%H:%M:%S", gmtime()))
     try:
         os.remove(output_file)
     except OSError:
