@@ -10,7 +10,16 @@
 /src/.idea/workspace.xml
 /src/__pycache__/
 /src/target/
+/src/main/__pycache__/
+/src/main/resources/__pycache__/
+/src/main/python/ui/__pycache__/
+/src/main/python/math/__pycache__/
+/src/main/python/quadtree/__pycache__/
+/src/main/python/main_module/__pycache__/
+/src/main/python/io/__pycache__/
 /src/unittest/python/__pycache__/
+src/main/python/__pycache__/
+/src/main/resources/nbodysim*
 .pytest_cache/
 .coverage
 /__pycache__

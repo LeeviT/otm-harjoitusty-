@@ -9,6 +9,7 @@ from main.python.math.forces import calculate_forces
 from main.python.math.update_attributes import calc_updates
 from main.python.ui.set_parameters import StartGUI
 from main.python.ui.calculation_phase import CalculationView
+from main.python.ui.final_info import FinalView
 
 
 def main():
@@ -17,7 +18,7 @@ def main():
     timestep_counter.update_current_timestep(0)
     nob, body_list = read_data_to_body_list(input_file)
     simulation_accuracy = 0.01 + 0.03 * simulation_accuracy
-    output_file = str("../nbodysim" + str(nob) + "_OUT_TEST" + strftime("%Y-%m-%d_%H:%M:%S", gmtime()))
+    output_file = str("src/main/resources/nbodysim" + str(nob) + "_OUT_" + strftime("%Y-%m-%d_%H:%M:%S", gmtime()))
     try:
         os.remove(output_file)
     except OSError:
@@ -35,6 +36,8 @@ def main():
         timestep_counter.update_current_timestep(timestep + 1)
         print("timestep = " + str(timestep))
         calculate_timestep(timestep, output_file, nob)
+    print("output file saved to: " + output_file)
+    FinalView(output_file)
 
 
 def calculate_timestep(timestep, output_file, nob):
@@ -49,6 +52,3 @@ def calculate_timestep(timestep, output_file, nob):
     force_on_body_list = calculate_forces(node_storage, body_list, 0.1)
     upd_values = calc_updates(body_list, force_on_body_list, 0.001)
     write_new_timestep(output_file, timestep, upd_values)
-
-
-main()
