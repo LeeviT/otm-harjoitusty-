@@ -5,6 +5,7 @@ Sovellus simuloi usean kappaleen välistä gravitaatiovuorovaikutusta.
 **Käytän harjoitustyössä kielenä Pythonia.**
 
 ## Dokumentaatio
+[käyttöohje](https://github.com/LeeviT/otm-harjoitustyo/blob/master/dokumentaatio/kaytto-ohje.md)
 
 [vaatimusmäärittelydokumentti](https://github.com/LeeviT/otm-harjoitustyo/blob/master/dokumentaatio/vaatimusMaarittely.md)
 
@@ -12,12 +13,12 @@ Sovellus simuloi usean kappaleen välistä gravitaatiovuorovaikutusta.
 
 [arkkitehtuuridokkari](https://github.com/LeeviT/otm-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
-[sekvenssikaavio](https://github.com/LeeviT/otm-harjoitustyo/blob/master/dokumentaatio/sekvenssikaavio.md)
-
 ## Releaset
 [viikon 5 release](https://github.com/LeeviT/otm-harjoitustyo/releases/tag/v0.1-alpha)
 
 [viikon 6 release](https://github.com/LeeviT/otm-harjoitustyo/releases/tag/v0.2-alpha)
+
+[lopullinen release](https://github.com/LeeviT/otm-harjoitustyo/releases/tag/v1.0-beta)
 
 ## Komentorivitoiminnot
 ### Virtuaaliympäristö

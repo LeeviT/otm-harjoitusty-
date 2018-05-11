@@ -1,5 +1,5 @@
 # Käyttöohje
-Lataa tiedosto _nbodysim-final.whl_ ja _random__input__file.dat_ [lopullisesta releasesta](https://github.com/LeeviT/otm-harjoitustyo/releases/tag/v1.0-beta).
+Lataa tiedostot _nbodysim-final.whl_ ja _random__input__file.dat_  [lopullisesta releasesta](https://github.com/LeeviT/otm-harjoitustyo/releases/tag/v1.0-beta).
 ## Ohjelman käynnistäminen
 Voit käynnistää ohjelman komennolla 
 ```
