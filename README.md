@@ -11,7 +11,7 @@ Sovellus simuloi usean kappaleen välistä gravitaatiovuorovaikutusta.
 
 [testausdokumentti](https://github.com/LeeviT/otm-harjoitustyo/blob/master/dokumentaatio/testausdokumentti.md)
 
-[arkkitehtuuridokkari](https://github.com/LeeviT/otm-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+[arkkitehtuurikuvas](https://github.com/LeeviT/otm-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 [työaikakirjanpito](https://github.com/LeeviT/otm-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
 

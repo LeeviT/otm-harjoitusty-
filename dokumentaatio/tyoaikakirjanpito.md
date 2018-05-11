@@ -21,5 +21,10 @@
 | 29.4. | 6    | koodailua |
 | 1.5.  | 4    | voimien lasku toteutettu |
 | 2.5.  | 7    | koodailua ja Sphinxin konffausta |
+| 6.5.  | 5    | timesteppien välisten tiedostokirjoitusten toteutus |
+| 8.5.  | 5    | timesteppien välisten tiedostolukujen toteutus |
+| 9.5.  | 6    | timestep-metodin muokkaaminen lopulliseen muotoon |
+| 10.5. | 6    | graafinen UI |
+| 11.5. | 10   | graafinen UI loppuun, viimeiset fiksailut, parit testit, dokumentaatio yms. |
 
-__yht.__ 79 tuntia
+__yht.__ 111 tuntia
