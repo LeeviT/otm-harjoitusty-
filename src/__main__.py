@@ -1,4 +1,4 @@
-from main.python.main_mod.tmp_main import main
+from main.python.main_module.execute_application_logic import main
 
 
 if __name__ == '__main__':

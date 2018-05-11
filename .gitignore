@@ -5,6 +5,7 @@
 /laskarit/viikko2/Unicafe/nbproject/
 /__pycache__/
 /target/
+/venv/
 /src/.idea/
 /src/.idea/workspace.xml
 /src/__pycache__/
@@ -12,6 +13,7 @@
 .pytest_cache/
 .coverage
 /__pycache__
-src/main/python/structures/__pycache__/__init__.cpython-35.pyc
-src/main/python/structures/__pycache__/body.cpython-35.pyc
+src/main/python/structures/__pycache__/
+src/main/python/io/__pycache__/
+src/main/python/math/__pycache__/
 venv/lib/python3.6/site-packages/
