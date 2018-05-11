@@ -34,7 +34,7 @@ def main():
     write_new_timestep(output_file, 0, upd_values)
     for timestep in range(0, n_timesteps):
         timestep_counter.update_current_timestep(timestep + 1)
-        print("timestep = " + str(timestep))
+        print("timestep = " + str(timestep + 1))
         calculate_timestep(timestep, output_file, nob)
     print("output file saved to: " + output_file)
     FinalView(output_file)

@@ -27,3 +27,4 @@ src/main/python/structures/__pycache__/
 src/main/python/io/__pycache__/
 src/main/python/math/__pycache__/
 venv/lib/python3.6/site-packages/
+randominput.dat

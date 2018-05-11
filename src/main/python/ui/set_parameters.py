@@ -1,6 +1,5 @@
-from tkinter import *
+from tkinter import Tk, Label, Entry, Button, Scale, HORIZONTAL, S
 from tkinter import filedialog
-from main.python.ui.calculation_phase import CalculationView
 
 
 class StartGUI:
@@ -35,7 +34,7 @@ class StartGUI:
 
     def file_browser(self):
         file = filedialog.askopenfile(parent=self.Master, mode='rb', title='Choose a  input file')
-        if not file is None:
+        if not(file is None):
             self.input_file_name = file.name
             return self.input_file_name
 

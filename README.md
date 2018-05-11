@@ -21,19 +21,23 @@ Sovellus simuloi usean kappaleen välistä gravitaatiovuorovaikutusta.
 
 ## Komentorivitoiminnot
 ### Virtuaaliympäristö
-Sovellusta ajetaan (mieluiten) virtuaaliympäristössä _virtualenv_ illä. Sen voit käynnistää projektin juuressa _otm-harjoitustyo/_ komennolla
+Sovellusta ajetaan (mieluiten) virtuaaliympäristössä _virtualenv_:illä. Mikäli se ei ole asennettuna, voit asentaa sen komennolla
+```
+pip install virtualenv
+```
+Virtuaaliympäristön puolestaan voit luoda projektin juuressa _otm-harjoitustyo/_ komennolla
+```
+virtualenv venv/
+```
+Ja virtuaaliympäristön aktivoiminen projektin juuressa tapahtuu
 ```
 source venv/bin/activate
 ```
 
-### Vaatimukset
-Projektin buildaamiseen vaaditaan _pipin_ versiota 10.0.0 alempi versio sekä _PyBuilder_. _PyBuilderin_ saat asennettua aktivoimalla ensin virtuaaliympäristö (ks. yllä) ja suorittamalla komennon
+### Kirjastovaatimukset
+Projektin buildaamiseen vaaditaan _pip_:n versiota 10.0.0 alempi versio sekä muutamia Pythonin standardikirjastojen ulkopuolisia kirjastoja. Tarvittavat kirjastot kuten _PyBuilderin_, _numpyn_ yms. saat asennettua aktivoimalla ensin virtuaaliympäristön (ks. yllä) ja sitten suorittamalla projektin juuressa komennon
 ```
-pip install pybuilder
-``` 
-sekä _numpy_:
-```
-pip install numpy
+pip install -r requirements.txt
 ```
 
 ### Testaus
@@ -41,7 +45,7 @@ Koodia testataan PyBuilderin avulla. Checkstylen tekeminen _flake8_:lla, sekä y
 ```
 pyb analyze
 ```
-Ensin PyBuilder tulostaa outputissa checkstyle-virheiden määrän. Sitten _unittest_ ajaa yksikkötestit ja _coverage.py_ vielä generoi testauskattavuusraportin. Testauskattavuusraportin voi avata esim. Chromiumilla komennolla 
+Ensin PyBuilder tulostaa outputissa komentoriville checkstyle-virheiden määrän. Sitten _unittest_ ajaa yksikkötestit ja _coverage.py_ vielä generoi testauskattavuusraportin. Testauskattavuusraportin voi avata esim. Chromiumilla komennolla 
 ```
 chromium target/reports/coverage_html/index.html 
 ```
@@ -52,7 +56,7 @@ Projektin juuressa eli _otm-harjoitustyo/_ suorita komento
 ```
 pyb publish
 ```
-jolloin _.whl_-tiedosto generoituu _target_-kansion alakansioon. Voit suorittaa _wheelin_ kommennolla
+jolloin _.whl_-tiedosto generoituu polkuun _target/dist/nbodysim-1.0.dev0/dist/nbodysim-1.0.dev0-py3-none-any.whl_. Voit suorittaa _wheelin_ kommennolla
 ```
 python3.6 target/dist/nbodysim-1.0.dev0/dist/nbodysim-1.0.dev0-py3-none-any.whl 
 ```

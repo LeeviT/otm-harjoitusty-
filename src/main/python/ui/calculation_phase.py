@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Tk, StringVar, Label, S
 
 
 class CalculationView:
@@ -18,4 +18,3 @@ class CalculationView:
     def update_current_timestep(self, current_timestep):
         self.timestep.set(str(current_timestep))
         self.Master.update()
-

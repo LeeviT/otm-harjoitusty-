@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Tk, Label, mainloop, S
 
 
 class FinalView:

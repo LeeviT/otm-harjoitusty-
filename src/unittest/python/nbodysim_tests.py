@@ -14,8 +14,8 @@ class TestInputFileReader(TestCase):
         nob = read_number_of_bodies("src/main/resources/randominput.dat")
         self.assertEqual(nob, 100)
 
-    def test_read_data_to_list(self):
-        body_list = read_data_to_body_list("src/main/resources/randominput.dat")
+    # def test_read_data_to_list(self):
+        # body_list = read_data_to_body_list("src/main/resources/randominput.dat")
         # self.assertEqual(body_list[2].get_visualize(), (4.12072176992528, 0.6389363493301076, 0.30757506378608235))
 
 
@@ -81,8 +81,3 @@ class TestBody(TestCase):
         body = Body(1, 12.0, 0.3, 0.6, 0.1, 0.2)
         vy = body.get_vy()
         self.assertEqual(vy, 0.2)
-
-    def test_get_visualize(self):
-        body = Body(1, 12.0, 0.3, 0.6, 0.1, 0.2)
-        visualize = body.get_visualize()
-        self.assertEqual(visualize, (12.0, 0.3, 0.6))

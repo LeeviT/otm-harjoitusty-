@@ -25,6 +25,3 @@ class Body:
 
     def get_vy(self):
         return self.vy
-
-    def get_visualize(self):
-        return self.m, self.x, self.y
